@@ -4,4 +4,4 @@ echo "Deploy to Zendesk..."
 
 zat validate
 
-echo "::set-output name=time::$time"
+echo "::set-output name=time::hello"

@@ -20,8 +20,8 @@ RUN cd && \
 	exec $SHELL
 
 ENV PATH $HOME/.rbenv/plugins/ruby-build/bin:$PATH
-RUN	/root/.rbenv/bin/rbenv install 2.1.5  && \
- 	/root/.rbenv/bin/rbenv global 2.1.5
+RUN	/root/.rbenv/bin/rbenv install 2.3.8  && \
+ 	/root/.rbenv/bin/rbenv global 2.3.8
 
 RUN echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 
