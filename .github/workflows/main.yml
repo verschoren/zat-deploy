@@ -7,7 +7,7 @@ jobs:
     steps:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
-        uses: verschoren/zat-validate
+        uses: verschoren/zat-validate@v1
       - name: Hello world action step
         uses: ./ # Uses an action in the root directory
         id: hello
