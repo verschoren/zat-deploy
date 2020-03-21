@@ -6,11 +6,9 @@ jobs:
     name: ZAT Validate
     steps:
       # To use this repository's private action, you must check out the repository
-      - name: Make gradlew executable
-        run: chmod +x /entrypoint.sh
       - name: Checkout
         uses: verschoren/zat-validate@v1
-      - name: Hello world action step
+      - name: HZat validate
         uses: ./ # Uses an action in the root directory
         id: hello
         with:
