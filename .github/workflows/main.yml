@@ -6,6 +6,7 @@ jobs:
     name: ZAT Validate
     steps:
       # To use this repository's private action, you must check out the repository
+      - uses: actions/checkout@v1
       - name: Checkout
         uses: verschoren/zat-validate@master
       - name: Zat validate
