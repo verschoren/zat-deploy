@@ -7,8 +7,8 @@ jobs:
     steps:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
-        uses: verschoren/zat-validate@v1
-      - name: HZat validate
+        uses: verschoren/zat-validate@master
+      - name: Zat validate
         uses: ./ # Uses an action in the root directory
         id: hello
         with:
