@@ -17,4 +17,4 @@ jobs:
           subdomain: ${{ secrets.ZAT_DOMAIN }}
           username: ${{ secrets.ZAT_USER }}
           password: ${{ secrets.ZAT_PASSWORD }}
-          app-id: ''
+          app-id: '246685'
