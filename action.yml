@@ -14,3 +14,7 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
+    - ${{ inputs.subdomain }}
+    - ${{ inputs.username }}
+    - ${{ inputs.password }}
+    - ${{ inputs.app-id }}
