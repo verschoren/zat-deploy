@@ -2,6 +2,6 @@
 
 echo "Deploy to Zendesk..."
 
-zat validate
+zat update
 
-#echo "::set-output name=time::hello"
+echo "done"
