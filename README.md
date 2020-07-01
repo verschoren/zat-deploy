@@ -3,7 +3,7 @@
 ## About
 This Action creates or updates an existing app in your Zendesk instance after a succesful commit in your GitHub repository.
 
-Checkout the YouTube video below to see how it works:
+Checkout [the YouTube video](https://www.youtube.com/watch?v=nM9m_gU2sGU) below to see how it works:
 
 [![](screenshot.png)](https://www.youtube.com/watch?v=nM9m_gU2sGU)
 
