@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
 echo "Deploying to Zendesk..."
-FILE=/.zat
+FILE=.zat
 
 if [ -f "$FILE" ]; then
     echo "$FILE exists."
