@@ -1,5 +1,5 @@
 #!/bin/sh -l
 
-echo "Deploy to Zendesk..."
+echo "Deploying to Zendesk..."
 
 zat update
