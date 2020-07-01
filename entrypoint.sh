@@ -3,7 +3,7 @@
 echo "Deploying to Zendesk..."
 FILE=.zat
 
-STRING="\app_id\""
+STRING="\"app_id\""
 
 if  grep -q "$STRING" "$FILE" ; then
     echo 'the string exists' ; 
