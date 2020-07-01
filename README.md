@@ -26,6 +26,38 @@ If you want to update an existing app, add an *app_id* key with the ID of the cu
       "app_id": 123456
     }
 
+## Usage
+Below is an example flow to Deploy the app (either create or update) and store the resulting .zat file and app-xxx.zip as an artifact.
+
+    name: Deploy Zendesk App
+
+    on:
+      push:
+        branches: [ master ]
+
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v2
+
+        - name: ZAT Deploy
+          uses: verschoren/zat-update@master
+
+        - name: Archive App Package
+          uses: actions/upload-artifact@v1
+          with:
+           name: packaged_app
+           path: tmp
+
+        - name: Archive .zat file
+          uses: actions/upload-artifact@v1
+          with:
+           name: .zat
+           path: .zat
+
+You can use the 2 artifacts to create releases in your GitHub repo, or to keep the .zat file in sync with your Zendesk instance.
 
 ## Dependencies
 1. The action uses docker: *verschoren/zendesk_zat:latest*
