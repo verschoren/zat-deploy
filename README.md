@@ -2,6 +2,8 @@
 
 ## Flow
 
+![](screenshot.png)
+
 This Action creates or updates an existing app in your Zendesk instance.
 It requires a *.zat* file in the root of your repository. See [the Zendesk documentation](https://developer.zendesk.com/apps/docs/developer-guide/zat) for more info.
 
