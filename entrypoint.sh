@@ -2,12 +2,15 @@
 
 echo "Deploying to Zendesk..."
 FILE=.zat
+PASSWORD="\"password\""
+APP_ID="\"app_id\""
 
-STRING="\"app_id\""
-
-if  grep -q "$STRING" "$FILE" ; then
-    echo 'the string exists' ; 
+if  grep -q "$APP_ID" "$FILE" ; then
+    echo 'App ID detected, running update' ; 
     zat update
+elif grep -q "$PASSWORD" "$FILE" ; then
+    echo 'No ID detected, creating new app.' ; 
+    zat create
 else
-    echo 'the string does not exist' ; 
+    echo 'can\'t run the script' ; 
 fi
