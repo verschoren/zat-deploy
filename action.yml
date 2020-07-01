@@ -1,5 +1,5 @@
 # action.yml
-name: 'ZAT Tools'
+name: 'Zendesk App Tools - Update App'
 description: 'Update an existing app in a Zendesk instance. Requires a .zat file/'
 branding:
   icon: 'arrow-up-circle'  
