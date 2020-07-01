@@ -2,13 +2,16 @@
 
 echo "Deploying to Zendesk..."
 FILE=.zat
+STRING="app_id"
 
 if [ -f "$FILE" ]; then
     echo "$FILE exists."
-    if ! grep -q password "$File"; then
-        Some Actions # SomeString was not found
+    if [ ! -z $(grep "$STRING" "$FILE") ]; then 
+        echo "FOUND"
+        zat update
+    else 
+        echo "NOT FOUND" 
     fi
-    zat update
 else 
     echo "$FILE does not exist."
 fi
