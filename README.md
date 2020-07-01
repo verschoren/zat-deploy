@@ -1,20 +1,17 @@
 # zat-update
 
-on: [push]
+This Action updates an existing app in your Zendesk instance.
+It requires a *.zat* file in the root of your repository.
 
-jobs:
-  zat_update:
-    runs-on: ubuntu-latest
-    name: ZAT UPDATE
-    steps:
-      # To use this repository's private action, you must check out the repository
-      - uses: actions/checkout@v1
-      - name: Checkout
-        uses: verschoren/zat-validate@master
-      - name: Zat Validate
-        uses: ./ # Uses an action in the root directory
-        with:
-          subdomain: ${{ secrets.ZAT_DOMAIN }}
-          username: ${{ secrets.ZAT_USER }}
-          password: ${{ secrets.ZAT_PASSWORD }}
-          app-id: '246685'
+The *.zat* file should contain the following:
+
+  {
+    "zat_latest": "3.8.0",
+    "zat_update_check": "2020-07-01",
+    "subdomain": "subdomaain",
+    "username": "admin@example.com/token",
+    "password": "your_api_token",
+    "app_id": 123456
+  }
+  
+Make sure to replace the *app_id* with the ID of the currently installed app.
