@@ -1,5 +1,6 @@
 # action.yml
 name: 'Zendesk App Tools - Deploy Apps'
+author: 'Thomas Verschoren'
 description: 'Create or Update an existing app in a Zendesk instance. Requires a .zat file.'
 branding:
   icon: 'arrow-up-circle'  
