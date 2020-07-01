@@ -5,7 +5,7 @@ FILE=.zat
 
 if [ -f "$FILE" ]; then
     echo "$FILE exists."
-    if [ ! -z $(grep "password" "$FILE") ]; then 
+    if [ ! -z $(grep app_id "$FILE") ]; then 
         zat update
     else 
         echo "NOT FOUND" 
