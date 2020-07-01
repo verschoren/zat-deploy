@@ -1,10 +1,10 @@
 # Zendesk App Tools - Deploying an app
 
+## About
+This Action creates or updates an existing app in your Zendesk instance after a succesful commit in your GitHub repository.
+[![](screenshot.png)](https://www.youtube.com/watch?v=nM9m_gU2sGU)
+
 ## Flow
-
-![](screenshot.png)
-
-This Action creates or updates an existing app in your Zendesk instance.
 It requires a *.zat* file in the root of your repository. See [the Zendesk documentation](https://developer.zendesk.com/apps/docs/developer-guide/zat) for more info.
 
 The *.zat* file should contain the following if you want to install a new app: 
@@ -60,6 +60,10 @@ Below is an example flow to Deploy the app (either create or update) and store t
            path: .zat
 
 You can use the 2 artifacts to create releases in your GitHub repo, or to keep the .zat file in sync with your Zendesk instance.
+
+## Create or Update
+If you have never deployed the app, you'll need to run the Action once, and retrieve the *.zat* artifact from the workflow.
+This file contains the app_id needed to update the app the next time the app runs. You can replace your existing file with the newly generated *.zat* file.
 
 ## Dependencies
 1. The action uses docker: *verschoren/zendesk_zat:latest*
