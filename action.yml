@@ -1,14 +1,9 @@
 # action.yml
 name: 'ZAT Tools'
-description: 'Run the ZAT Tools'
+description: 'Update an existing app in a Zendesk instance. Requires a .zat file/'
 branding:
   icon: 'arrow-up-circle'  
   color: 'green'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.subdomain }}
-    - ${{ inputs.username }}
-    - ${{ inputs.password }}
-    - ${{ inputs.app-id }}
