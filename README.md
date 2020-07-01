@@ -19,5 +19,5 @@ The *.zat* file should contain the following:
 Make sure to replace the *app_id* with the ID of the currently installed app.
 
 ## Dependencies
-1. The action uses docker pull verschoren/zendesk_zat:latest
+1. The action uses docker: *verschoren/zendesk_zat:latest*
 2. It then uses the entrypoint.sh to run *zat update*
