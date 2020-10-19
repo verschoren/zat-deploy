@@ -1,4 +1,6 @@
 # Zendesk App Tools - Deploying an app
+![](screenshot.png)
+
 
 ## About
 This Action creates or updates an existing app in your Zendesk instance after a succesful commit in your GitHub repository.
