@@ -1,5 +1,5 @@
 # Zendesk App Tools - Deploying an app
-![](screenshot.png)
+![](logo.png)
 
 
 ## About
