@@ -1,4 +1,4 @@
-FROM verschoren/zendesk_zat:latest
+FROM ghcr.io/verschoren/docker_zat:latest
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
